@@ -1,3 +1,4 @@
+Markdown
 # 🚀 Aplikasi Simulasi CAT CPNS 2024 (Laravel Version)
 
 Aplikasi berbasis web untuk latihan ujian CPNS sesuai dengan standar **BKN 2024**. Proyek ini mencakup sistem penilaian otomatis, manajemen waktu (timer), ambang batas (*passing grade*), dan fitur cetak pembahasan dalam format PDF.
@@ -30,31 +31,29 @@ Aplikasi berbasis web untuk latihan ujian CPNS sesuai dengan standar **BKN 2024*
 
 ## 📦 Instalasi & Penggunaan
 
-### 1. Clone Repositori
-```bash
+1. Clone Repositori
+bash
 git clone [https://github.com/username-kamu/nama-proyek.git](https://github.com/username-kamu/nama-proyek.git)
 cd nama-proyek
-2. Instalasi Dependency
 
+2. Instalasi Dependency
 Bash
 composer install
 npm install && npm run dev
+
 3. Konfigurasi Database
-
 Salin file .env.example menjadi .env dan sesuaikan koneksi database (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
-
 Bash
 cp .env.example .env
 php artisan key:generate
+
 4. Migrasi & Seeding (Penting!)
-
 Jalankan migrasi untuk membuat tabel dan masukkan 110 soal ke dalam database menggunakan seeder yang telah kita buat.
-
 Bash
 php artisan migrate
 php artisan db:seed --class=PaketDuaSeeder
-5. Jalankan Server
 
+5. Jalankan Server
 Bash
 php artisan serve
 Akses aplikasi di: http://127.0.0.1:8000
