@@ -1,0 +1,15 @@
+{
+  "name": "Pixel UI",
+  "slug": "pixel-ui",
+  "author": "internal",
+  "dark": false,
+  "version": "1.0.0",
+  "theme_color": "#f4f0ff",
+  "description": "Material-inspired pastel theme with friendly rounded surfaces.",
+  "preview": {
+    "background": "linear-gradient(135deg, #faf7ff, #ede9fe)",
+    "bar": "rgba(49,46,129,0.16)",
+    "card": "rgba(255,255,255,0.92)",
+    "card_border": "rgba(99,102,241,0.18)"
+  }
+}

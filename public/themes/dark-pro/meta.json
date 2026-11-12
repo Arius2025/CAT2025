@@ -1,0 +1,15 @@
+{
+  "name": "Dark Pro",
+  "slug": "dark-pro",
+  "author": "internal",
+  "dark": true,
+  "version": "1.0.0",
+  "theme_color": "#0f1115",
+  "description": "Premium dark eye comfort with high readability.",
+  "preview": {
+    "background": "linear-gradient(135deg, #0f1115, #1c212b)",
+    "bar": "rgba(248,250,252,0.18)",
+    "card": "rgba(36,43,54,0.94)",
+    "card_border": "rgba(71,85,105,0.72)"
+  }
+}

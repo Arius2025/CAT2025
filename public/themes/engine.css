@@ -1,0 +1,106 @@
+body[data-theme] {
+  --bg-midnight: var(--bg-primary);
+  --bg-glass: var(--surface-glass);
+  --border-glass: var(--border);
+  --accent-cyan: var(--accent-soft);
+  --accent-blue: var(--accent);
+  --shadow-premium: var(--shadow);
+  --card-surface: var(--card-bg);
+}
+
+body[data-theme] .card,
+body[data-theme] .modal-content,
+body[data-theme] .dropdown-menu,
+body[data-theme] .offcanvas:not(.mobile-sheet),
+body[data-theme] .accordion-item,
+body[data-theme] .list-group-item,
+body[data-theme] .table-card,
+body[data-theme] .page-empty,
+body[data-theme] .apple-skeleton-card,
+body[data-theme] .apple-skeleton-table,
+body[data-theme] .card-theme,
+body[data-theme] .card-theme-hover {
+  background: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  border-color: var(--card-border) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+body[data-theme] .card-theme-hover:hover,
+body[data-theme] .table-card:hover {
+  background: var(--card-bg-hover) !important;
+}
+
+body[data-theme] .card-header,
+body[data-theme] .card-footer,
+body[data-theme] .modal-header,
+body[data-theme] .modal-footer,
+body[data-theme] .card-header-theme,
+body[data-theme] .card-footer-theme,
+body[data-theme] .card-body-theme {
+  background: transparent !important;
+  color: var(--card-text) !important;
+  border-color: var(--divider) !important;
+}
+
+body[data-theme] .form-control,
+body[data-theme] .form-select,
+body[data-theme] textarea,
+body[data-theme] input:not([type="checkbox"]):not([type="radio"]) {
+  background: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border-color: var(--input-border) !important;
+}
+
+body[data-theme] .form-control::placeholder,
+body[data-theme] textarea::placeholder {
+  color: var(--placeholder) !important;
+}
+
+body[data-theme] .table thead th {
+  background: var(--table-header) !important;
+  color: var(--text-secondary) !important;
+}
+
+body[data-theme] .table tbody tr:hover > * {
+  background: var(--table-row-hover) !important;
+}
+
+body[data-theme] .apple-glass,
+body[data-theme] .apple-glass-soft,
+body[data-theme] .apple-glass-card,
+body[data-theme] .page-hero,
+body[data-theme] .navbar-floating,
+body[data-theme] .mobile-dock,
+body[data-theme] .offcanvas.mobile-sheet {
+  border-color: var(--card-border) !important;
+}
+
+body[data-theme] .apple-glass-soft,
+body[data-theme] .apple-glass-table-wrap,
+body[data-theme] .result-answer-panel,
+body[data-theme] .result-image-panel,
+body[data-theme] .result-explain-panel,
+body[data-theme] .result-key-panel,
+body[data-theme] .coach-card,
+body[data-theme] .coach-panel,
+body[data-theme] .analysis-mode-card,
+body[data-theme] .breakdown-item,
+body[data-theme] .result-card,
+body[data-theme] .pembahasan-card,
+body[data-theme] .card-soal {
+  background: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  border-color: var(--card-border) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+body[data-theme] .apple-hint,
+body[data-theme] .apple-subtitle,
+body[data-theme] .apple-kicker,
+body[data-theme] .apple-label,
+body[data-theme] .text-muted,
+body[data-theme] small,
+body[data-theme] .small {
+  color: var(--card-muted) !important;
+}

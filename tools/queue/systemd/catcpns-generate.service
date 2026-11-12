@@ -1,0 +1,15 @@
+[Unit]
+Description=CAT CPNS Queue Worker (generate)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+Restart=always
+RestartSec=5
+WorkingDirectory=/var/www/cat-cpns
+ExecStart=/usr/bin/php artisan queue:work database --queue=generate --sleep=2 --tries=1 --timeout=900
+
+[Install]
+WantedBy=multi-user.target

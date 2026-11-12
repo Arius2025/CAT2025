@@ -1,0 +1,15 @@
+{
+  "name": "Samsung One UI",
+  "slug": "one-ui",
+  "author": "internal",
+  "dark": false,
+  "version": "1.0.0",
+  "theme_color": "#f6f7fb",
+  "description": "Comfortable rounded interface optimized for mobile study flow.",
+  "preview": {
+    "background": "linear-gradient(135deg, #f6f7fb, #eef1f6)",
+    "bar": "rgba(17,24,39,0.16)",
+    "card": "rgba(255,255,255,0.94)",
+    "card_border": "rgba(17,24,39,0.08)"
+  }
+}

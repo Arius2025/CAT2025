@@ -1,0 +1,15 @@
+{
+  "name": "Light Pro",
+  "slug": "light-pro",
+  "author": "internal",
+  "dark": false,
+  "version": "1.0.0",
+  "theme_color": "#f8fafc",
+  "description": "Clean modern productivity with strong readability.",
+  "preview": {
+    "background": "linear-gradient(135deg, #f8fafc, #e8eef6)",
+    "bar": "rgba(15,23,42,0.18)",
+    "card": "rgba(255,255,255,0.92)",
+    "card_border": "rgba(203,213,225,0.75)"
+  }
+}

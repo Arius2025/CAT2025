@@ -1,0 +1,253 @@
+/* Warna khas CAT BKN */
+:root {
+    --bkn-blue: #004a87;
+    --bkn-yellow: #ffcc00;
+    --bkn-gray: #f4f4f4;
+}
+
+body {
+    background-color: var(--bkn-gray);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.header-cat {
+    background-color: var(--bkn-blue);
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 4px solid var(--bkn-yellow);
+}
+
+.panel-soal {
+    background: white;
+    border-radius: 5px;
+    min-height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nomor-kotak {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: white;
+}
+
+.nomor-kotak.active {
+    border: 3px solid var(--bkn-blue);
+    background-color: #e3f2fd;
+}
+
+.nomor-kotak.filled {
+    background-color: var(--bkn-yellow);
+    color: #000;
+    border-color: #d4ac00;
+}
+
+.timer-box {
+    background: #000;
+    color: var(--bkn-yellow);
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nomor-kotak {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.nomor-kotak:hover {
+    background: #e9ecef;
+}
+
+.nomor-kotak.active {
+    background: #004a87;
+    color: white;
+    border-color: #004a87;
+}
+
+.nomor-kotak.filled {
+    background: #ffcc00;
+    border-color: #ffcc00;
+    color: #000;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+    transition: all 0.3s;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-collapsed {
+    margin-left: -280px;
+}
+
+.main-content {
+    transition: all 0.3s;
+    margin-left: 280px;
+    width: calc(100% - 280px);
+}
+
+.main-content-full {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Navigasi Warna */
+.nomor-kotak {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    font-size: 0.85rem;
+}
+
+.bg-not-visited {
+    background-color: #e0e0e0;
+    color: #757575;
+}
+
+/* Abu-abu */
+.bg-skipped {
+    background-color: #ff5252;
+    color: white;
+    border-color: #b71c1c;
+}
+
+/* Merah */
+.bg-answered {
+    background-color: #4caf50;
+    color: white;
+    border-color: #1b5e20;
+}
+
+/* Hijau */
+.nomor-kotak.active {
+    outline: 3px solid #004a87;
+    outline-offset: 2px;
+}
+
+/* Warna Kuning untuk Ragu-Ragu */
+.bg-doubt {
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+    border-color: #e6b800 !important;
+}
+
+/* Animasi transisi sidebar */
+.sidebar-nav {
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content {
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* Sidebar Navigasi Kiri */
+.sidebar-nav {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    border-right: 2px solid #e0e0e0;
+    transition: transform 0.3s ease;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-collapsed {
+    transform: translateX(-300px);
+}
+
+.main-content {
+    margin-left: 300px;
+    transition: margin-left 0.3s ease;
+    min-height: 100vh;
+    background: #f4f7f9;
+}
+
+.main-content-full {
+    margin-left: 0;
+}
+
+/* Kotak Nomor Soal */
+.grid-navigasi {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 kolom rapi */
+    gap: 8px;
+    padding: 15px;
+}
+
+.nomor-kotak {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid #dee2e6;
+    transition: 0.2s;
+}
+
+/* State Warna */
+.bg-not-visited {
+    background: #f8f9fa;
+    color: #6c757d;
+}
+
+.bg-skipped {
+    background: #ff4d4d;
+    color: white;
+    border-color: #e60000;
+}
+
+.bg-answered {
+    background: #28a745;
+    color: white;
+    border-color: #1e7e34;
+}
+
+.bg-doubt {
+    background: #ffc107;
+    color: #212529;
+    border-color: #d39e00;
+}
+
+.nomor-kotak.active {
+    border: 3px solid #004a87;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 74, 135, 0.3);
+}

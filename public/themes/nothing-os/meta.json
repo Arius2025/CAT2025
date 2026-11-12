@@ -1,0 +1,15 @@
+{
+  "name": "Nothing OS",
+  "slug": "nothing-os",
+  "author": "internal",
+  "dark": true,
+  "version": "1.0.0",
+  "theme_color": "#111111",
+  "description": "Futuristic monochrome UI with industrial clarity.",
+  "preview": {
+    "background": "linear-gradient(135deg, #111111, #232323)",
+    "bar": "rgba(255,255,255,0.22)",
+    "card": "rgba(32,32,32,0.94)",
+    "card_border": "rgba(255,255,255,0.10)"
+  }
+}

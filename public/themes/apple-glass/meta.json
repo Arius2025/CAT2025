@@ -1,0 +1,15 @@
+{
+  "name": "Apple Glass",
+  "slug": "apple-glass",
+  "author": "internal",
+  "dark": false,
+  "version": "1.0.0",
+  "theme_color": "#eef2f7",
+  "description": "Premium translucent interface with soft frosted layers.",
+  "preview": {
+    "background": "linear-gradient(135deg, rgba(255,255,255,.95), rgba(226,232,240,.90))",
+    "bar": "rgba(17,24,39,0.15)",
+    "card": "rgba(255,255,255,0.68)",
+    "card_border": "rgba(255,255,255,0.48)"
+  }
+}
