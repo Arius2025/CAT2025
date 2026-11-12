@@ -11,10 +11,11 @@
 
 <p align="center">
   <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11"></a>
-  <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.2+"></a>
+  <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.2%20--%208.5%20(Recommended)-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.2 - 8.5"></a>
   <a href="https://mysql.com"><img src="https://img.shields.io/badge/MySQL-8.0%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL 8.0+"></a>
   <a href="https://bkn.go.id"><img src="https://img.shields.io/badge/Standard-BKN%20CAT%202027-d97706?style=for-the-badge" alt="BKN Standard"></a>
   <a href="https://groq.com"><img src="https://img.shields.io/badge/AI-Groq%20%7C%20Ollama-10b981?style=for-the-badge" alt="AI Engine"></a>
+  <a href="#keamanan--kompatibilitas-php-85-anti-hack-hardening"><img src="https://img.shields.io/badge/Security-PHP%208.5%20Hardened-success?style=for-the-badge" alt="Security Hardened"></a>
   <a href="#lisensi"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"></a>
 </p>
 
@@ -183,11 +184,30 @@ cat-cpns/
 ## 🛠️ Panduan Instalasi & Pengoperasian Lokal
 
 ### Prasyarat Sistem
-- **PHP** >= 8.2 (Ekstensi aktif: `pdo_mysql`, `mbstring`, `openssl`, `tokenizer`, `xml`, `curl`, `gd`, `zip`)
+- **PHP** >= 8.2 s.d. **8.5** (Sangat direkomendasikan **PHP 8.5.12+** untuk perlindungan penuh dari eksploitasi keamanan baru. Ekstensi aktif: `pdo_mysql`, `mbstring`, `openssl`, `tokenizer`, `xml`, `curl`, `gd`, `zip`)
 - **Composer** >= 2.2
 - **MySQL** >= 8.0 atau **MariaDB** >= 10.4
 - **Node.js** >= 18.x & NPM (Opsional untuk build Vite)
 - Web Server: **Laragon** (Direkomendasikan di Windows) atau **Nginx / Apache**
+
+---
+
+## 🛡️ Keamanan & Kompatibilitas PHP 8.5 (Anti-Hack Hardening)
+
+Platform ini secara penuh mendukung dan merekomendasikan penggunaan **PHP 8.5** (khususnya patch rilis **PHP 8.5.12+**) guna melindungi server dari gelombang kerentanan dan serangan siber terbaru:
+
+- **Mitigasi Celah Memori Interpreter (PHP2Shell - CVE-2026-109618 & CVE-2026-109619)**:
+  Patch keamanan pada PHP 8.5.12+ menutup kerentanan penanganan memori OOM (*Out-Of-Memory*) via `longjmp()` dan pointer state request global yang dapat dimanfaatkan penyerang untuk eksekusi kode jarak jauh (*Remote Code Execution* / RCE).
+- **Proteksi Injeksi Argumen CGI Windows (CVE-2024-4577)**:
+  Mencegah eksploitasi konversi karakter *best-fit* pada Windows yang sering dimanfaatkan bot scanner otomatis untuk menyusupkan skrip berbahaya.
+- **Konfigurasi Composer Siap PHP 8.5**:
+  `composer.json` telah dikonfigurasi dengan batasan `"php": "^8.2 || ^8.3 || ^8.4 || ^8.5"` sehingga paket pustaka dapat berjalan optimal pada runtime PHP 8.5 tanpa hambatan dependensi.
+
+### Cara Memasang PHP 8.5 di Laragon (Windows)
+1. Unduh arsip binary resmi **PHP 8.5 x64 Thread Safe (TS)** dari [windows.php.net/download#php-8.5](https://windows.php.net/download#php-8.5).
+2. Ekstrak folder hasil unduhan ke direktori `C:\laragon\bin\php\` (contoh nama folder: `php-8.5.12-Win32-vs17-x64`).
+3. Buka jendela **Laragon** -> Klik kanan di area bebas -> arahkan ke menu **PHP** -> **Version** -> pilih `php-8.5.12-Win32-vs17-x64`.
+4. Laragon secara otomatis akan merestart layanan web server dan langsung mengaktifkan runtime PHP 8.5 yang aman.
 
 ### Langkah Pemasangan
 
